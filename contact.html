@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Sky Travel Booking Portal</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,900&display=swap" rel="stylesheet" />
+
+</head>
+<style>
+    * {
+        box-sizing: border-box;
+    }
+
+    html {
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        margin: 0;
+        padding: 0;
+        background: url(https://www.stylist.co.uk/images/app/uploads/2020/10/28173600/uk-road-trips-scottish-highlands-1680x880.jpg?w=1680&h=880&fit=max&auto=format%2Ccompress) no-repeat;
+        background-size: cover;
+        color: black;
+        font-family: "open sans";
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    /*----------------NAVBAR------------*/
+    header {
+        display: flex;
+        justify-content: space-between;
+        color: rgba(69, 245, 160);
+        background: #0f2453;
+    }
+
+    header div {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-family: "roboto";
+        margin: 0px 32px;
+    }
+
+    header div i {
+        font-size: 35px;
+        margin: 20px;
+    }
+
+    header nav {
+        padding: 20px 35px;
+    }
+
+    nav ul li {
+        list-style: none;
+        display: inline;
+        text-transform: uppercase;
+        font-weight: bold;
+        letter-spacing: 2px;
+    }
+
+    nav li a {
+        padding: 16px;
+        margin: 16px;
+        text-decoration: none;
+        color: white;
+        transition: all 250ms ease-in;
+    }
+
+    nav li a:hover {
+        background: rgba(69, 245, 160);
+        color: black;
+    }
+
+    /************contact*************/
+    .contact {
+        margin: 100px;
+        position: absolute;
+        top: 15%;
+        left: 30%;
+        font-size: 50px;
+        color: white;
+        font-family: roboto;
+        text-shadow: 2px 2px 0 black;
+    }
+
+    .icon {
+        margin: 200px;
+        position: absolute;
+        top: 25%;
+        left: 20%;
+        font-size: 50px;
+        font-size: 80px;
+        background: cadetblue;
+    }
+
+    .icon1 {
+        margin: 200px;
+        position: absolute;
+        top: 25%;
+        left: 30%;
+        font-size: 50px;
+        font-size: 80px;
+        background: cadetblue;
+    }
+
+    .icon2 {
+        margin: 200px;
+        position: absolute;
+        top: 25%;
+        left: 40%;
+        font-size: 50px;
+        font-size: 80px;
+        background: cadetblue;
+    }
+
+    p.link {
+        margin: 200px;
+        position: absolute;
+        top: 45%;
+        left: 18%;
+        font-size: 10px;
+        color: black;
+        background: rgba(255, 255, 255, 0.7);
+    }
+
+    p.link1 {
+        margin: 200px;
+        position: absolute;
+        top: 45%;
+        left: 29%;
+        font-size: 10px;
+        color: black;
+        background: rgba(255, 255, 255, 0.7);
+    }
+
+    p.link2 {
+        margin: 200px;
+        position: absolute;
+        top: 45%;
+        left: 39%;
+        font-size: 10px;
+        color: black;
+        background: rgba(255, 255, 255, 0.7);
+    }
+</style>
+
+<body>
+    <header>
+        <div>
+            <i class="fas fa-map-marked-alt"></i>
+            <p>Sky Travel Booking Portal</p>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="contact">
+        <i class="fas fa-comment"></i>
+        Contact
+    </section>
+    <div class="media">
+        <div class="icon"><i class="fab fa-instagram"></i></div>
+        <p class="link">
+            <a href="https://www.instagram.com/">@sky_travel_booking_portal</a>
+        </p>
+        <div class="icon1"><i class="fab fa-facebook"></i></div>
+        <p class="link1">
+            <a href="https://en-gb.facebook.com/">sky_travel_booking_portal</a>
+        </p>
+        <div class="icon2"><i class="fab fa-twitter"></i></div>
+        <p class="link2">
+            <a href="https://twitter.com/?lang=en-gb">@sky_travel_booking_portal</a>
+        </p>
+    </div>
+
+</body>
+
+</html>

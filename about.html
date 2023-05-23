@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Sky Travel Booking Portal</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,900&display=swap" rel="stylesheet" />
+
+</head>
+<style>
+    * {
+        box-sizing: border-box;
+    }
+
+    html {
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        margin: 0;
+        padding: 0;
+        background: url(https://static.standard.co.uk/s3fs-public/thumbnails/image/2016/04/05/16/durdledoordorset.jpg) no-repeat;
+        background-size: cover;
+        color: black;
+        font-family: "open sans";
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    /*----------------NAVBAR------------*/
+    header {
+        display: flex;
+        justify-content: space-between;
+        color: rgba(69, 245, 160);
+        background: #0f2453;
+    }
+
+    header div {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-family: "roboto";
+        margin: 0px 32px;
+    }
+
+    header div i {
+        font-size: 35px;
+        margin: 20px;
+    }
+
+    header nav {
+        padding: 20px 35px;
+    }
+
+    nav ul li {
+        list-style: none;
+        display: inline;
+        text-transform: uppercase;
+        font-weight: bold;
+        letter-spacing: 2px;
+    }
+
+    nav li a {
+        padding: 16px;
+        margin: 16px;
+        text-decoration: none;
+        color: white;
+        transition: all 250ms ease-in;
+    }
+
+    nav li a:hover {
+        background: rgba(69, 245, 160);
+        color: black;
+    }
+
+    /*-------------TOP SECTION-------------*/
+    .titles {
+        color: white;
+        text-align: center;
+        width: 50vw;
+        margin: 0 auto;
+    }
+
+    .titles h1 {
+        font-family: "roboto";
+        font-size: 80px;
+        margin-bottom: 0;
+        text-shadow: 2px 2px 0 black;
+        color: rgb(255, 251, 0);
+    }
+
+
+    /*-------------BOTTOM SECTION-----------*/
+    .container-boxes {
+        margin: 0 auto;
+        padding: 0;
+        display: flex;
+        justify-content: space-around;
+        align-items: flex-end;
+        max-width: 80vw;
+    }
+
+    .box {
+        background: rgb(229, 245, 4, 0.8);
+        margin: 1rem;
+        padding: 0.5rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 355px;
+        max-height: 185px;
+        min-height: 185px;
+        transition: all 250ms ease-out;
+    }
+
+    .box:hover {
+        background: rgba(255, 255, 255, 0.7);
+        transform: translateY(-20%);
+    }
+
+    .box a {
+        text-decoration: none;
+        color: black;
+    }
+
+    .icon {
+        font-size: 48px;
+        padding: 16px;
+    }
+
+    .text h3 {
+        text-transform: uppercase;
+        letter-spacing: 4px;
+        margin-bottom: 0;
+        color: black;
+    }
+
+    .text p {
+        margin-top: 15px;
+        line-height: 15px;
+        text-align: center;
+    }
+
+    .text {
+        padding: 8px;
+    }
+
+    /*------MEDIAQUERIES-------*/
+    @media (max-width: 1160px) {
+        .icon {
+            font-size: 32px;
+            padding: 8px;
+        }
+
+        .text h3 {
+            text-transform: uppercase;
+            letter-spacing: 4px;
+            margin-bottom: 0;
+            font-size: 16px;
+        }
+
+        .text p {
+            margin-top: 5px;
+            line-height: 10px;
+            text-align: center;
+            font-size: 1px;
+        }
+
+        nav li a:hover {
+            background: none;
+            color: black;
+        }
+    }
+
+    footer p {
+        text-align: center;
+        color: #373737;
+    }
+
+    @media (max-width: 850px) {
+        body {
+            height: 100%;
+        }
+
+        .container-boxes {
+            flex-direction: column;
+        }
+
+        .box:hover {
+            background: rgba(255, 255, 255, 0.7);
+            transform: none;
+        }
+
+        .titles h1 {
+            font-size: 48px;
+        }
+    }
+</style>
+
+<body>
+    <header>
+        <div>
+            <i class="fas fa-map-marked-alt"></i>
+            <p>Sky Travel Booking Portal</p>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="titles">
+        <h1>About Us</h1>
+    </section>
+
+    <section class="container-boxes">
+        <div class="box">
+            <div class="icon">
+                <i class="fas fa-address-card"></i>
+            </div>
+            <div class="text">
+                <h3>About US</h3>
+                <p>
+                    We streamline the travel planning process to save you time and money. Check out all of your
+                    possibilities.
+                    whether you're planning a tour around United kingdom,summer trip to Wales,
+                    or extending your long weekend in England to include a quick road trip to Scotland.
+                </p>
+
+            </div>
+        </div>
+        <div class="box">
+            <div class="icon">
+                <i class="fas fa-globe-europe"></i>
+            </div>
+            <div class="text">
+                <h3>Why Us?</h3>
+                <p>We've figured out all the tricky parts so you don't have to! Instead, you'll have more time to
+                    arrange the enjoyable aspects of your trip!
+                </p>
+                </a>
+            </div>
+        </div>
+        <div class="box">
+            <div class="icon">
+                <i class="fas fa-users"></i>
+            </div>
+            <div class="text">
+                <h3>Our Team</h3>
+                <p>we are a group of three Friends who enjoy discovering places around the Uk</p>
+                </a>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <p>&copy;2021 Sky Travel Booking Portal - All rights reserved</p>
+    </footer>
+</body>
+
+</html>

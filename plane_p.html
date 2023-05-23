@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Sky Travel Booking Portal</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,900&display=swap" rel="stylesheet" />
+
+</head>
+<style>
+    * {
+        box-sizing: border-box;
+    }
+
+    html {
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        margin: 0;
+        padding: 0;
+        background: url(http://www.technocrazed.com/wp-content/uploads/2015/12/Airplane-wallpaper-133.jpg) no-repeat;
+        background-size: cover;
+        color: black;
+        font-family: "open sans";
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    /*----------------NAVBAR------------*/
+    header {
+        display: flex;
+        justify-content: space-between;
+        color: rgba(69, 245, 160);
+        background: #0f2453;
+    }
+
+    header div {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-family: "roboto";
+        margin: 0px 32px;
+    }
+
+    header div i {
+        font-size: 35px;
+        margin: 20px;
+    }
+
+    header nav {
+        padding: 20px 35px;
+    }
+
+    nav ul li {
+        list-style: none;
+        display: inline;
+        text-transform: uppercase;
+        font-weight: bold;
+        letter-spacing: 2px;
+    }
+
+    nav li a {
+        padding: 16px;
+        margin: 16px;
+        text-decoration: none;
+        color: white;
+        transition: all 250ms ease-in;
+    }
+
+    nav li a:hover {
+        background: rgba(69, 245, 160);
+        color: black;
+    }
+
+    /************plane*************/
+    .flight_book {
+        margin: 100px;
+        position: absolute;
+        top: 15%;
+        left: 30%;
+        font-size: 50px;
+        color: white;
+        font-family: roboto;
+        text-shadow: 2px 2px 0 black;
+    }
+
+    .search-form {
+        margin: 20%;
+        padding: 10px;
+        border: 2px solid rgba(69, 245, 160, 0.5);
+        border-radius: 5%;
+        position: absolute;
+        left: 0%;
+        background: rgba(69, 245, 160, 0.5);
+    }
+
+    .form-group {
+        color: #ffffff;
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        margin: 10px;
+    }
+
+    .form-group input,
+    select,
+    option {
+        border: none;
+        padding: 5px;
+        background-color: bisque;
+    }
+
+    .form-group label {
+        margin: 5px;
+        padding: 10px;
+    }
+
+    .button-submit {
+        text-align: center;
+
+    }
+</style>
+
+<body>
+    <header>
+        <div>
+            <i class="fas fa-map-marked-alt"></i>
+            <p>Sky Travel Booking Portal</p>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="flight_book">
+        <i class="fas fa-plane"></i>
+        Plane Trip
+    </section>
+    <div class="search-form">
+
+        <form method="GET" action="main.py">
+            <div class="form-group">
+                <label for="departure">Departure From</label>
+                <input type="text" name="departure" id="departure" placeholder="London,Cardiff...">
+
+                <label for="arrivals">Arrivals To</label>
+                <input type="text" name="arrivals" id="arrivals" placeholder="London,Cardiff...">
+            </div>
+            <div class="form-group">
+                <label for="adults">Adults</label>
+                <input type="text" name="adults" id="adults" placeholder="0">
+
+                <label for="children">Children (2-15y)</label>
+                <input type="text" name="children" id="children" placeholder="0">
+
+                <label for="kids">Kids</label>
+                <input type="text" name="kids" id="kids" placeholder="0">
+
+            </div>
+            <div class="button-submit">
+                <input type="submit" value="search" name="search" id="search">
+            </div>
+</body>
+
+</html>
